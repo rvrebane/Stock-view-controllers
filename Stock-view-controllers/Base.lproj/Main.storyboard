@@ -32,17 +32,28 @@
                                     <action selector="launchActivityView" destination="BYZ-38-t0r" eventType="touchUpInside" id="YfD-SL-B5k"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hx-qG-ctA" userLabel="alertButton">
+                                <rect key="frame" x="172" y="258" width="70" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Alert!"/>
+                                <connections>
+                                    <action selector="launchAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="lib-aI-Lai"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="92g-gd-sKR" firstAttribute="centerX" secondItem="Te4-fB-yDT" secondAttribute="centerX" id="9dB-qo-EAx"/>
+                            <constraint firstItem="8hx-qG-ctA" firstAttribute="centerX" secondItem="Te4-fB-yDT" secondAttribute="centerX" id="BG5-wz-NPU"/>
+                            <constraint firstItem="8hx-qG-ctA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="214" id="BTd-D5-PES"/>
                             <constraint firstItem="92g-gd-sKR" firstAttribute="top" secondItem="Te4-fB-yDT" secondAttribute="bottom" constant="51" id="dil-Hs-8ug"/>
                             <constraint firstItem="Te4-fB-yDT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nvm-ee-dUV"/>
                             <constraint firstItem="Te4-fB-yDT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="se5-k0-f00"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="alertButton" destination="8hx-qG-ctA" id="58g-JT-VOH"/>
                         <outlet property="presentButton" destination="Te4-fB-yDT" id="gX4-UZ-cGr"/>
                         <outlet property="selectButton" destination="92g-gd-sKR" id="zbR-ki-Nsa"/>
                     </connections>
