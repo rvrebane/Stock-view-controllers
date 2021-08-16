@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var presentButton: UIButton!
+    @IBOutlet weak var selectButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,15 @@ class ViewController: UIViewController {
         let nextController = UIImagePickerController()
         present(nextController, animated: true, completion: nil)
     }
+    
+    // Method to launch Activity View
+    @IBAction func launchActivityView() {
+        let image = UIImage()
+        let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        present(controller, animated: true, completion: nil)
+    }
+    
+    
 
 
 }

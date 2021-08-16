@@ -24,16 +24,27 @@
                                     <action selector="experimentWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ITZ-NP-qNh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92g-gd-sKR" userLabel="selectButton">
+                                <rect key="frame" x="166" y="535" width="82" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="launchActivityView" destination="BYZ-38-t0r" eventType="touchUpInside" id="YfD-SL-B5k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="92g-gd-sKR" firstAttribute="centerX" secondItem="Te4-fB-yDT" secondAttribute="centerX" id="9dB-qo-EAx"/>
+                            <constraint firstItem="92g-gd-sKR" firstAttribute="top" secondItem="Te4-fB-yDT" secondAttribute="bottom" constant="51" id="dil-Hs-8ug"/>
                             <constraint firstItem="Te4-fB-yDT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nvm-ee-dUV"/>
                             <constraint firstItem="Te4-fB-yDT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="se5-k0-f00"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="presentButton" destination="Te4-fB-yDT" id="gX4-UZ-cGr"/>
+                        <outlet property="selectButton" destination="92g-gd-sKR" id="zbR-ki-Nsa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
