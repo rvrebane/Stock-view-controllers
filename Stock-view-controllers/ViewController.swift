@@ -10,8 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var presentButton: UIButton!
-    @IBOutlet weak var selectButton: UIButton!
+    @IBOutlet weak var imagePickerButton: UIButton!
+    @IBOutlet weak var activityViewButton: UIButton!
     @IBOutlet weak var alertButton: UIButton!
     
     override func viewDidLoad() {
@@ -34,13 +34,15 @@ class ViewController: UIViewController {
         present(controller, animated: true, completion: nil)
     }
     
-    // Method to launch Activity View
+    // Method to launch Alert
     @IBAction func launchAlert() {
         let controller = UIAlertController()
         
+        //Alert title and message
         controller.title = "Test Alert"
         controller.message = "This is a test"
         
+        //User to press "Okay" button to dismiss the alert
         let okAction = UIAlertAction(title: "ok", style: UIAlertAction.Style.default) { action in self.dismiss(animated: true, completion: nil)
             
         }

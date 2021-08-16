@@ -16,20 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te4-fB-yDT" userLabel="presentButton">
-                                <rect key="frame" x="126" y="412" width="162" height="72"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te4-fB-yDT" userLabel="imagePickerButton">
+                                <rect key="frame" x="76" y="412" width="262" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="Present"/>
+                                <state key="normal" title="ImagePicker"/>
                                 <connections>
-                                    <action selector="experimentWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ITZ-NP-qNh"/>
+                                    <action selector="experimentWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FpY-9I-iTB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92g-gd-sKR" userLabel="selectButton">
-                                <rect key="frame" x="166" y="535" width="82" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92g-gd-sKR" userLabel="activityViewButton">
+                                <rect key="frame" x="123.5" y="535" width="167" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Select"/>
+                                <state key="normal" title="Activity View"/>
                                 <connections>
-                                    <action selector="launchActivityView" destination="BYZ-38-t0r" eventType="touchUpInside" id="YfD-SL-B5k"/>
+                                    <action selector="launchActivityView" destination="BYZ-38-t0r" eventType="touchUpInside" id="kTW-Ut-cdf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hx-qG-ctA" userLabel="alertButton">
@@ -37,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Alert!"/>
                                 <connections>
-                                    <action selector="launchAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="lib-aI-Lai"/>
+                                    <action selector="launchAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="dOs-KN-peY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,9 +53,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="alertButton" destination="8hx-qG-ctA" id="58g-JT-VOH"/>
-                        <outlet property="presentButton" destination="Te4-fB-yDT" id="gX4-UZ-cGr"/>
-                        <outlet property="selectButton" destination="92g-gd-sKR" id="zbR-ki-Nsa"/>
+                        <outlet property="activityViewButton" destination="92g-gd-sKR" id="jqv-Fn-RCH"/>
+                        <outlet property="alertButton" destination="8hx-qG-ctA" id="cvM-ci-QnK"/>
+                        <outlet property="imagePickerButton" destination="Te4-fB-yDT" id="KQp-Qy-NhW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
